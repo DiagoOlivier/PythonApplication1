@@ -6,9 +6,14 @@
 # TODO: ajouter un compteur
 # TODO: afficher plus de texte
 import RessourcesJeuduPendu as Re
-
-# motATrouver = "restaurant"
-motATrouver = Re.motATrouver(7)
+longueurMot = 0
+while longueurMot < 4 or longueurMot > 11:
+    try:
+        longueurMot = int(input("Avec quelle longueur de mot vous voulez jouer ? (entre 5 et 10)"))
+        break
+    except ValueError:
+        print("Veuillez taper un nombre")
+motATrouver = Re.motATrouver(longueurMot)
 lettreProposee = ""
 lettresDejaProposees = []
 motTrouve = list("-" * len(motATrouver))
