@@ -4,8 +4,8 @@ import time
 def premiers(n):
     prem = list(range(2, n + 1))
     k = 2
-    nRacine = math.sqrt(n)
-    while k < nRacine:
+    n_racine = math.sqrt(n)
+    while k < n_racine:
         prem = [p for p in prem if p <= k or p % k != 0]
         k = prem[prem.index(k) + 1]  # nouveau nombre premier
     return prem
