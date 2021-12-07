@@ -1,0 +1,62 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>87d9b96d-f787-45df-9b60-6830149bb799</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>fourreTout.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication1</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CD_Lost_Astro.py" />
+    <Compile Include="Chuck.py" />
+    <Compile Include="deviner_un_nombre.py" />
+    <Compile Include="ecole.py" />
+    <Compile Include="exceptions.py" />
+    <Compile Include="Exemples.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="fourreTout.py" />
+    <Compile Include="HistoriqueV0.py" />
+    <Compile Include="HistoriqueV1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hello.py" />
+    <Compile Include="CD_Chevaux_Courses.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Score99.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mots_uniques.py" />
+    <Compile Include="sondage.py" />
+    <Compile Include="top_10_cmd.py" />
+    <Compile Include="top_10_gui.py" />
+    <Compile Include="trouver_mot_le_plus_utilise.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
