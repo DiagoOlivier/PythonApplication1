@@ -11,12 +11,12 @@ def premiers(n):
     return prem
 
 
-nombreATester = 600851475143
-Liste_premiers = premiers(int(math.sqrt(nombreATester)))
+nombreaTester = 600851475143
+Liste_premiers = premiers(int(math.sqrt(nombreaTester)))
 print(Liste_premiers)
 debut = time.time()
 for i in reversed(Liste_premiers):
-    if nombreATester % i == 0:
+    if nombreaTester % i == 0:
         print(i)
         break
 
